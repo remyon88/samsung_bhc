@@ -36,6 +36,17 @@ const Meta = styled.div`
 const Title = styled.div` font-weight:700; font-size:25px;`;
 const Arrow = styled.span` color:var(--brand);`;
 
+const Slogan = styled.div`
+  margin-top:60px;
+
+  h2 {
+    font-size:26px;
+    line-height:1.2;
+    margin:4px 0;
+    font-weight:600;
+  }
+`;
+
 export default function Home(){
   const regions = db.regions;
 
@@ -43,9 +54,11 @@ export default function Home(){
     <div>
       <WelcomeBanner />
 
-      <h2 style={{ marginTop: 60 }}>TASTY,</h2>
-      <h2>CRISPY,</h2>
-      <h2>JUICY !</h2>
+      <Slogan>
+        <h2>TASTY,</h2>
+        <h2>CRISPY,</h2>
+        <h2>JUICY !</h2>
+      </Slogan>
 
       <Grid>
         {regions.map(r => (

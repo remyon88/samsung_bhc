@@ -3,7 +3,7 @@ const QRCode = require('qrcode');
 const fs = require('fs');
 const path = require('path');
 
-const TARGET_URL = 'https://bhc-menu.vercel.app'; // ← 여기 배포 URL로 바꿔
+const TARGET_URL = 'https://samsung-bhc-zzvw.vercel.app/'; // ← 여기 배포 URL로 바꿔
 
 const outDir = path.join(__dirname, '..', 'public', 'qr');
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
