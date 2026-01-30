@@ -23,16 +23,16 @@ const Hero = styled.div`
 
 /* ✅ 치킨 이름 크게 */
 const Title = styled.h1`
-  margin: 0;
-  padding: 10px 20px 4px;
-  font-size: 32px;
+  margin: 0px 10px 10px;
+  padding: 10px 10px 10px;
+  font-size: 15px;
   font-weight: 900;
   letter-spacing: -0.5px;
 `;
 
 const TopBar = styled.div`
   padding: 0 20px;
-  margin: 8px 0 12px;
+  margin: 8px 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,11 +42,11 @@ const TopBar = styled.div`
 const LangBox = styled.div`
   display: flex;
   gap: 8px;
-  margin: 10px 2px 15px;
+  margin: 10px 2px 10px;
 `;
 
 const LangBtn = styled.button`
-  padding: 10px 14px;
+  padding: 0 10px 14px;
   border-radius: 14px;
   border: 0;
   cursor: pointer;
@@ -54,23 +54,23 @@ const LangBtn = styled.button`
   color: ${p => (p.active ? '#fff' : '#222')};
   font-weight: 700;
   font-size: 15px;
-  margin: 10px 2px 15px;
+ 
 `;
 
 const HomeBtn = styled.button`
-  padding: 20px 18px;
+  padding:18px 18px;
   border: 0;
   border-radius: 14px;
   cursor: pointer;
   background: #ff385c;
   color: #fff;
   font-weight: 700;
-  font-size: 15px;
-  margin: 0 10px 20px;
+  font-size: 13px;
+  margin: 1px 5px 5px;
 `;
 
 const Grid = styled.div`
-  padding: 0 20px 15px;
+  padding: 18px 18px;
   display: grid;
   gap: 24px;
   
@@ -80,8 +80,8 @@ const Grid = styled.div`
 const Card = styled.div`
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 10px 20px rgba(0,0,0,.08);
-  margin: 0 10px 20px;
+  box-shadow: 10px 10px 20px rgba(0,0,0,.08);
+  margin: 10px 10px 20px;
 `;
 
 const Body = styled.div`
@@ -92,7 +92,7 @@ const Name = styled.div`
   font-size: 35px;
   font-weight: 900;
   color: #111;
-  margin-bottom: 29px;
+  margin-bottom: 30px;
 `;
 
 const Desc = styled.p`
@@ -109,12 +109,12 @@ const PortionBox = styled.div`
 
   strong {
     display: block;
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 18px;
   }
 
   ul {
-    padding-left: 18px;
+    padding-left: 16px;
     margin: 1.0rem;
     line-height: 3; 
   }
