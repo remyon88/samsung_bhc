@@ -1,0 +1,337 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "관리자",
+      "userId": "admin",
+      "password": "1234",
+      "phone": "010-0000-0000",
+      "interests": ["서울"]
+    }
+  ],
+
+  "regions": [
+    { "id": "sweet", "name": "스윗칠리킹", "cover": "/images/sweet/sweet1.png" },
+    { "id": "cri", "name": "콰삭킹", "cover": "/images/cri/cri1.png" },
+    { "id": "fri", "name": "후라이드", "cover": "/images/fri/fri0.png" },
+    { "id": "hotfri", "name": "핫후라이드", "cover": "/images/hotfri/hotfri0.png" },
+    { "id": "chi", "name": "양념치킨", "cover": "/images/chi/source.png" },
+    { "id": "red", "name": "레드킹", "cover": "/images/red/red1.png" },
+    { "id": "mat", "name": "맛초킹", "cover": "/images/macho/macho1.png" },
+    { "id": "gold", "name": "골드킹", "cover": "/images/gold/gold1.png" },
+    { "id": "hotgold", "name": "핫골드킹", "cover": "/images/hotgold/hotgold1.png" },
+    { "id": "sso", "name": "쏘마치", "cover": "/images/sso/sso1.png" }
+  ],
+
+  "attractions": [
+    {
+      "id": 1,
+      "regionId": "sweet",
+      "name": {
+        "ko": "스윗칠리킹",
+        "en": "Sweet Chili King",
+        "ja": "スイートチリキング",
+        "zh": "甜辣王"
+      },
+      "desc": {
+        "ko": "달콤한 칠리소스로 남녀노소 누구나 즐길 수 있는 치킨",
+        "en": "Sweet chili chicken enjoyed by all ages",
+        "ja": "甘いチリソースで子供から大人まで楽しめるチキン",
+        "zh": "甜辣酱口味，适合所有年龄层的炸鸡"
+      },
+      "spicy": 1,
+      "allergy": {
+        "ko": ["밀"],
+        "en": ["Wheat"],
+        "ja": ["小麦"],
+        "zh": ["小麦"]
+      },
+      "sauce": {
+        "ko": ["스윗칠리 소스"],
+        "en": ["Sweet Chili Sauce"],
+        "ja": ["スイートチリソース"],
+        "zh": ["甜辣酱"]
+      },
+      "image": "/images/sweet/sweet1.png"
+    },
+
+    {
+      "id": 2,
+      "regionId": "cri",
+      "name": {
+        "ko": "콰삭킹",
+        "en": "Quasak King",
+        "ja": "クァサッキング",
+        "zh": "夸脆王"
+      },
+      "desc": {
+        "ko": "겉은 콰삭하고 속은 촉촉한 식감이 매력적인 프리미엄 치킨",
+        "en": "Extra crispy outside and juicy inside",
+        "ja": "外はカリッと中はジューシー",
+        "zh": "外酥里嫩的高级炸鸡"
+      },
+      "spicy": 0,
+      "allergy": {
+        "ko": ["밀"],
+        "en": ["Wheat"],
+        "ja": ["小麦"],
+        "zh": ["小麦"]
+      },
+      "sauce": {
+        "ko": ["소금", "머스타드"],
+        "en": ["Salt", "Mustard"],
+        "ja": ["塩", "マスタード"],
+        "zh": ["盐", "芥末"]
+      },
+      "image": "/images/cri/cri1.png"
+    },
+
+    {
+      "id": 3,
+      "regionId": "fri",
+      "name": {
+        "ko": "후라이드 치킨",
+        "en": "Fried Chicken",
+        "ja": "フライドチキン",
+        "zh": "原味炸鸡"
+      },
+      "desc": {
+        "ko": "바삭한 식감과 담백한 맛을 살린 기본 후라이드 치킨",
+        "en": "Classic crispy fried chicken",
+        "ja": "シンプルで香ばしい定番チキン",
+        "zh": "酥脆清淡的经典炸鸡"
+      },
+      "spicy": 0,
+      "allergy": {
+        "ko": ["밀"],
+        "en": ["Wheat"],
+        "ja": ["小麦"],
+        "zh": ["小麦"]
+      },
+      "sauce": {
+        "ko": ["소금", "케첩"],
+        "en": ["Salt", "Ketchup"],
+        "ja": ["塩", "ケチャップ"],
+        "zh": ["盐", "番茄酱"]
+      },
+      "image": "/images/fri/fri0.png"
+    },
+
+    {
+      "id": 4,
+      "regionId": "hotfri",
+      "name": {
+        "ko": "핫후라이드",
+        "en": "Hot Fried Chicken",
+        "ja": "ホットフライドチキン",
+        "zh": "辣味原味炸鸡"
+      },
+      "desc": {
+        "ko": "후라이드에 매콤한 시즈닝을 더한 중독적인 치킨",
+        "en": "Spicy seasoned fried chicken",
+        "ja": "ピリ辛のフライドチキン",
+        "zh": "加入辣味调料的炸鸡"
+      },
+      "spicy": 3,
+      "allergy": {
+        "ko": ["밀"],
+        "en": ["Wheat"],
+        "ja": ["小麦"],
+        "zh": ["小麦"]
+      },
+      "sauce": {
+        "ko": ["매운 소스"],
+        "en": ["Spicy Sauce"],
+        "ja": ["辛味ソース"],
+        "zh": ["辣酱"]
+      },
+      "image": "/images/hotfri/hotfri0.png"
+    },
+
+    {
+      "id": 5,
+      "regionId": "chi",
+      "name": {
+        "ko": "양념치킨",
+        "en": "Yangnyeom Chicken",
+        "ja": "ヤンニョムチキン",
+        "zh": "韩式甜辣炸鸡"
+      },
+      "desc": {
+        "ko": "매콤달콤한 특제 양념소스의 한국 대표 치킨",
+        "en": "Korean sweet and spicy chicken",
+        "ja": "甘辛ソースの韓国定番",
+        "zh": "经典韩式甜辣炸鸡"
+      },
+      "spicy": 2,
+      "allergy": {
+        "ko": ["밀", "대두"],
+        "en": ["Wheat", "Soybean"],
+        "ja": ["小麦", "大豆"],
+        "zh": ["小麦", "大豆"]
+      },
+      "sauce": {
+        "ko": ["양념 소스"],
+        "en": ["Sweet Spicy Sauce"],
+        "ja": ["ヤンニョムソース"],
+        "zh": ["甜辣酱"]
+      },
+      "image": "/images/chi/source.png"
+    },
+
+    {
+      "id": 6,
+      "regionId": "red",
+      "name": {
+        "ko": "레드킹",
+        "en": "Red King",
+        "ja": "レッドキング",
+        "zh": "红辣王"
+      },
+      "desc": {
+        "ko": "극강의 매운맛을 원하는 사람을 위한 치킨",
+        "en": "Extremely spicy chicken",
+        "ja": "激辛好き向け",
+        "zh": "重度嗜辣者专用"
+      },
+      "spicy": 5,
+      "allergy": {
+        "ko": ["밀", "대두"],
+        "en": ["Wheat", "Soybean"],
+        "ja": ["小麦", "大豆"],
+        "zh": ["小麦", "大豆"]
+      },
+      "sauce": {
+        "ko": ["레드 소스"],
+        "en": ["Red Sauce"],
+        "ja": ["レッドソース"],
+        "zh": ["红辣酱"]
+      },
+      "image": "/images/red/red1.png"
+    },
+
+    {
+      "id": 7,
+      "regionId": "mat",
+      "name": {
+        "ko": "맛초킹",
+        "en": "Macho King",
+        "ja": "マッチョキング",
+        "zh": "蒜香甜辣王"
+      },
+      "desc": {
+        "ko": "마늘과 고추의 조화가 뛰어난 중독적인 맛",
+        "en": "Sweet, spicy, garlicky chicken",
+        "ja": "ニンニクと辛さの絶妙な調和",
+        "zh": "蒜香与甜辣完美结合"
+      },
+      "spicy": 2,
+      "allergy": {
+        "ko": ["밀", "대두"],
+        "en": ["Wheat", "Soybean"],
+        "ja": ["小麦", "大豆"],
+        "zh": ["小麦", "大豆"]
+      },
+      "sauce": {
+        "ko": ["맛초 소스"],
+        "en": ["Macho Sauce"],
+        "ja": ["マッチョソース"],
+        "zh": ["蒜辣酱"]
+      },
+      "image": "/images/macho/macho1.png"
+    },
+
+    {
+      "id": 8,
+      "regionId": "gold",
+      "name": {
+        "ko": "골드킹",
+        "en": "Gold King",
+        "ja": "ゴールドキング",
+        "zh": "黄金王"
+      },
+      "desc": {
+        "ko": "마늘 간장 베이스의 달콤짭짤한 치킨",
+        "en": "Sweet soy garlic chicken",
+        "ja": "醤油とニンニクの深い味",
+        "zh": "蒜香酱油炸鸡"
+      },
+      "spicy": 1,
+      "allergy": {
+        "ko": ["밀", "대두"],
+        "en": ["Wheat", "Soybean"],
+        "ja": ["小麦", "大豆"],
+        "zh": ["小麦", "大豆"]
+      },
+      "sauce": {
+        "ko": ["마늘 간장 소스"],
+        "en": ["Soy Garlic Sauce"],
+        "ja": ["ガーリック醤油"],
+        "zh": ["蒜香酱油"]
+      },
+      "image": "/images/gold/gold1.png"
+    },
+
+    {
+      "id": 9,
+      "regionId": "hotgold",
+      "name": {
+        "ko": "핫골드킹",
+        "en": "Hot Gold King",
+        "ja": "ホットゴールドキング",
+        "zh": "辣味黄金王"
+      },
+      "desc": {
+        "ko": "골드킹에 매운맛을 더한 중독적인 치킨",
+        "en": "Spicy soy garlic chicken",
+        "ja": "辛さを加えたゴールドキング",
+        "zh": "升级辣味蒜香酱油鸡"
+      },
+      "spicy": 3,
+      "allergy": {
+        "ko": ["밀", "대두"],
+        "en": ["Wheat", "Soybean"],
+        "ja": ["小麦", "大豆"],
+        "zh": ["小麦", "大豆"]
+      },
+      "sauce": {
+        "ko": ["매운 간장 소스"],
+        "en": ["Spicy Soy Sauce"],
+        "ja": ["辛口醤油"],
+        "zh": ["辣酱油"]
+      },
+      "image": "/images/hotgold/hotgold1.png"
+    },
+
+    {
+      "id": 10,
+      "regionId": "sso",
+      "name": {
+        "ko": "쏘마치",
+        "en": "Ssomachi",
+        "ja": "ッソマチ",
+        "zh": "酱辣双拼"
+      },
+      "desc": {
+        "ko": "간장과 매운 소스를 동시에 즐길 수 있는 반반 치킨",
+        "en": "Half soy, half spicy chicken",
+        "ja": "醤油と辛味のハーフ",
+        "zh": "酱油与辣味双拼炸鸡"
+      },
+      "spicy": 2,
+      "allergy": {
+        "ko": ["밀", "대두"],
+        "en": ["Wheat", "Soybean"],
+        "ja": ["小麦", "大豆"],
+        "zh": ["小麦", "大豆"]
+      },
+      "sauce": {
+        "ko": ["간장 소스", "매운 소스"],
+        "en": ["Soy Sauce", "Spicy Sauce"],
+        "ja": ["醤油", "辛味"],
+        "zh": ["酱油", "辣酱"]
+      },
+      "image": "/images/sso/sso1.png"
+    }
+  ]
+}
