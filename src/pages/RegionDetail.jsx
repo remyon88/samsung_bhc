@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import { API } from '../lib/api';
+import { db } from '../lib/api';
+
 
 /* ✅ Hero 이미지 크게 + 안 잘리게 */
 const Hero = styled.div`
@@ -109,7 +110,7 @@ const PortionBox = styled.div`
 
   ul {
     padding-left: 18px;
-    margin: 1.5;
+    margin: 1.5rem;
     line-height: 4; 
   }
 
@@ -130,33 +131,28 @@ export default function RegionDetail() {
   const [loading, setLoading] = useState(true);
   const [err, setErr] = useState('');
 
-  useEffect(() => {
-    (async () => {
-      try {
-        setLoading(true);
+useEffect(() => {
+  try {
+    setLoading(true);
 
-        let r = await fetch(`${API}/regions/${regionId}`);
-        let reg = r.ok ? await r.json() : null;
-        if (Array.isArray(reg)) reg = reg[0];
+    // 1️⃣ region 찾기
+    const reg = db.regions.find(r => r.id === regionId);
+    if (!reg) throw new Error('치킨 정보를 찾을 수 없습니다.');
+    setRegion(reg);
 
-        if (!reg) {
-          const r2 = await fetch(`${API}/regions?id=${regionId}`);
-          const arr = await r2.json();
-          reg = arr[0];
-        }
-        if (!reg) throw new Error('치킨 정보를 찾을 수 없습니다.');
+    // 2️⃣ 해당 region의 치킨 목록
+    const list = db.attractions.filter(
+      a => a.regionId === regionId
+    );
+    setSpots(list);
 
-        setRegion(reg);
+  } catch (e) {
+    setErr(e.message);
+  } finally {
+    setLoading(false);
+  }
+}, [regionId]);
 
-        const a = await fetch(`${API}/attractions?regionId=${regionId}`);
-        setSpots(await a.json());
-      } catch (e) {
-        setErr(e.message);
-      } finally {
-        setLoading(false);
-      }
-    })();
-  }, [regionId]);
 
   if (loading) return <p style={{ padding: 20 }}>로딩 중…</p>;
   if (err) return <p style={{ padding: 20, color: 'crimson' }}>{err}</p>;
