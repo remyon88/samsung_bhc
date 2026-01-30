@@ -99,19 +99,19 @@ const Name = styled.div`
 
 const Desc = styled.p`
   font-size: 18px;
-  line-height: 2.0;
+  line-height: 1.9;
   color: #444;
-  margin: 0 0 50px;
+  margin: 0 0 80px;
 `;
 
 
 const PortionBox = styled.div`
-  font-size: 16px;
+  font-size: 15px;
   color: #333;
 
   strong {
     display: block;
-    font-size: 17px;
+    font-size: 16px;
     margin-bottom: 18px;
   }
 
