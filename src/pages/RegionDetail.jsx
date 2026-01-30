@@ -7,8 +7,8 @@ import { db } from '../lib/api';
 /* ✅ Hero 이미지 크게 + 안 잘리게 */
 const Hero = styled.div`
   position: relative;
-  height: 420px;
-  margin: 1px 20px;
+  height: 320px;
+  margin: 0.1px 0.1px;
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
@@ -24,7 +24,7 @@ const Hero = styled.div`
 /* ✅ 치킨 이름 크게 */
 const Title = styled.h1`
   margin: 0px 10px 10px;
-  padding: 10px 10px 2px;
+  padding: 10px 10px 0.2px;
   font-size: 20px;
   font-weight: 900;
   letter-spacing: -0.5px;
