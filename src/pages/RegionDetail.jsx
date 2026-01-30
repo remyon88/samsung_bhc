@@ -21,7 +21,7 @@ const Hero = styled.div`
   }
 `;
 
-/* ✅ 치킨 이름 크게 */
+
 const Title = styled.h1`
   margin: 0px 10px 10px;
   padding: 10px 10px 0.2px;
@@ -79,6 +79,7 @@ const Grid = styled.div`
   
 `;
 
+//언어 선택//
 const Card = styled.div`
   background: #fff;
   border-radius: 20px;
@@ -90,6 +91,7 @@ const Body = styled.div`
   padding: 16px;
 `;
 
+//치킨 이름//
 const Name = styled.div`
   font-size: 35px;
   font-weight: 900;
@@ -97,6 +99,7 @@ const Name = styled.div`
   margin-bottom: 30px;
 `;
 
+//치킨 설명과 구성안내 사이의 간격//
 const Desc = styled.p`
   font-size: 18px;
   line-height: 1.9;
@@ -104,7 +107,7 @@ const Desc = styled.p`
   margin: 0 0 80px;
 `;
 
-
+//구성안내//
 const PortionBox = styled.div`
   font-size: 15px;
   color: #333;
@@ -142,12 +145,12 @@ useEffect(() => {
   try {
     setLoading(true);
 
-    // 1️⃣ region 찾기
+    
     const reg = db.regions.find(r => r.id === regionId);
     if (!reg) throw new Error('치킨 정보를 찾을 수 없습니다.');
     setRegion(reg);
 
-    // 2️⃣ 해당 region의 치킨 목록
+   
     const list = db.attractions.filter(
       a => a.regionId === regionId
     );
@@ -166,10 +169,10 @@ useEffect(() => {
 
   return (
     <div>
-      {/* ✅ 치킨 이름 */}
+      {/* 치킨 이름 */}
       <Title>{region.name}</Title>
 
-      {/* ✅ Hero 이미지 */}
+      {/*  Hero 이미지 */}
       <Hero>
         <img src={region.cover} alt={region.name} />
       </Hero>
@@ -191,7 +194,7 @@ useEffect(() => {
               <Name>{s.name?.[lang] ?? s.name}</Name>
               <Desc>{s.desc?.[lang]}</Desc>
 
-              {/* ✅ 구성 안내 (공통) */}
+              
               <PortionBox>
                 <strong>
                   {lang === 'ko' && '구성 안내'}

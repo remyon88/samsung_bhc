@@ -38,6 +38,7 @@ const Arrow = styled.span` color:var(--brand);`;
 
 const Slogan = styled.div`
   margin-top:60px;
+  padding: 0.1px 20px 20px;
 
   h2 {
     font-size:14px;
