@@ -8,7 +8,7 @@ import { db } from '../lib/api';
 const Hero = styled.div`
   position: relative;
   height: 620px;
-  margin: 16px 20px;
+  margin: 4px 20px;
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
@@ -25,14 +25,14 @@ const Hero = styled.div`
 const Title = styled.h1`
   margin: 0;
   padding: 10px 20px 4px;
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 900;
   letter-spacing: -0.5px;
 `;
 
 const TopBar = styled.div`
   padding: 0 20px;
-  margin: 12px 0 24px;
+  margin: 8px 0 12px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -91,7 +91,7 @@ const Name = styled.div`
 `;
 
 const Desc = styled.p`
-  font-size: 27px;
+  font-size: 20px;
   line-height: 1.7;
   color: #444;
   margin: 0 0 20px;
@@ -174,7 +174,7 @@ useEffect(() => {
           <LangBtn active={lang === 'ja'} onClick={() => setLang('ja')}>日本語</LangBtn>
           <LangBtn active={lang === 'zh'} onClick={() => setLang('zh')}>中文</LangBtn>
         </LangBox>
-        <HomeBtn onClick={() => nav('/')}>홈으로</HomeBtn>
+        <HomeBtn onClick={() => nav('/')}>back</HomeBtn>
       </TopBar>
 
       <Grid>
