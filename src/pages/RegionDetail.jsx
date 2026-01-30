@@ -8,7 +8,7 @@ import { db } from '../lib/api';
 const Hero = styled.div`
   position: relative;
   height: 420px;
-  margin: 4px 20px;
+  margin: 1px 20px;
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
@@ -24,8 +24,8 @@ const Hero = styled.div`
 /* ✅ 치킨 이름 크게 */
 const Title = styled.h1`
   margin: 0px 10px 10px;
-  padding: 10px 10px 10px;
-  font-size: 15px;
+  padding: 10px 10px 2px;
+  font-size: 20px;
   font-weight: 900;
   letter-spacing: -0.5px;
 `;
@@ -54,7 +54,7 @@ const LangBtn = styled.button`
   background: ${p => (p.active ? '#ff385c' : '#f1f1f1')};
   color: ${p => (p.active ? '#fff' : '#222')};
   font-weight: 700;
-  font-size: 15px;
+  font-size: 16px;
   white-space: nowrap;
  
 `;
@@ -99,9 +99,9 @@ const Name = styled.div`
 
 const Desc = styled.p`
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 2.0;
   color: #444;
-  margin: 0 0 10px;
+  margin: 0 0 50px;
 `;
 
 
