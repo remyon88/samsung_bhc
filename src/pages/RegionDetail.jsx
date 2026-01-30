@@ -7,7 +7,7 @@ import { db } from '../lib/api';
 /* ✅ Hero 이미지 크게 + 안 잘리게 */
 const Hero = styled.div`
   position: relative;
-  height: 620px;
+  height: 420px;
   margin: 4px 20px;
   border-radius: 20px;
   overflow: hidden;
@@ -41,19 +41,21 @@ const TopBar = styled.div`
 
 const LangBox = styled.div`
   display: flex;
-  gap: 8px;
+  gap: 6px;
   margin: 10px 2px 10px;
+  flex-wrap: wrap
 `;
 
 const LangBtn = styled.button`
-  padding: 0 10px 14px;
-  border-radius: 14px;
+  padding: 6px 10px;
+  border-radius: 10px;
   border: 0;
   cursor: pointer;
   background: ${p => (p.active ? '#ff385c' : '#f1f1f1')};
   color: ${p => (p.active ? '#fff' : '#222')};
   font-weight: 700;
   font-size: 15px;
+  white-space: nowrap;
  
 `;
 
@@ -85,7 +87,7 @@ const Card = styled.div`
 `;
 
 const Body = styled.div`
-  padding: 13px;
+  padding: 16px;
 `;
 
 const Name = styled.div`
@@ -96,10 +98,10 @@ const Name = styled.div`
 `;
 
 const Desc = styled.p`
-  font-size: 20px;
-  line-height: 1.0;
+  font-size: 18px;
+  line-height: 1.5;
   color: #444;
-  margin: 0 0 45px;
+  margin: 0 0 10px;
 `;
 
 
