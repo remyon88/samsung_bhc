@@ -40,7 +40,7 @@ const Slogan = styled.div`
   margin-top:60px;
 
   h2 {
-    font-size:26px;
+    font-size:14px;
     line-height:1.2;
     margin:4px 0;
     font-weight:600;
@@ -55,9 +55,9 @@ export default function Home(){
       <WelcomeBanner />
 
       <Slogan>
-        <h2>TASTY,</h2>
-        <h2>CRISPY,</h2>
-        <h2>JUICY !</h2>
+        <h2>TASTY, CRISPY, JUICY !</h2>
+        
+        
       </Slogan>
 
       <Grid>

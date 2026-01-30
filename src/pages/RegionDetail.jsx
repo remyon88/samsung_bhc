@@ -24,7 +24,7 @@ const Hero = styled.div`
 /* ✅ 치킨 이름 크게 */
 const Title = styled.h1`
   margin: 0;
-  padding: 24px 20px 8px;
+  padding: 10px 20px 4px;
   font-size: 42px;
   font-weight: 900;
   letter-spacing: -0.5px;
