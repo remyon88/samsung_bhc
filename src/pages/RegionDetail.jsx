@@ -42,6 +42,7 @@ const TopBar = styled.div`
 const LangBox = styled.div`
   display: flex;
   gap: 8px;
+  margin: 10px 2px 15px;
 `;
 
 const LangBtn = styled.button`
@@ -52,7 +53,8 @@ const LangBtn = styled.button`
   background: ${p => (p.active ? '#ff385c' : '#f1f1f1')};
   color: ${p => (p.active ? '#fff' : '#222')};
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
+  margin: 10px 2px 15px;
 `;
 
 const HomeBtn = styled.button`
@@ -64,19 +66,22 @@ const HomeBtn = styled.button`
   color: #fff;
   font-weight: 700;
   font-size: 15px;
+  margin: 0 10px 20px;
 `;
 
 const Grid = styled.div`
-  padding: 0 20px 60px;
+  padding: 0 20px 15px;
   display: grid;
   gap: 24px;
+  
   
 `;
 
 const Card = styled.div`
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 10px 28px rgba(0,0,0,.08);
+  box-shadow: 0 10px 20px rgba(0,0,0,.08);
+  margin: 0 10px 20px;
 `;
 
 const Body = styled.div`
@@ -84,7 +89,7 @@ const Body = styled.div`
 `;
 
 const Name = styled.div`
-  font-size: 38px;
+  font-size: 35px;
   font-weight: 900;
   color: #111;
   margin-bottom: 29px;
