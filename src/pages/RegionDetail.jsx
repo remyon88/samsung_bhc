@@ -80,7 +80,7 @@ const Card = styled.div`
 `;
 
 const Body = styled.div`
-  padding: 24px;
+  padding: 13px;
 `;
 
 const Name = styled.div`
@@ -92,9 +92,9 @@ const Name = styled.div`
 
 const Desc = styled.p`
   font-size: 20px;
-  line-height: 1.7;
+  line-height: 1.0;
   color: #444;
-  margin: 0 0 20px;
+  margin: 0 0 45px;
 `;
 
 
@@ -104,13 +104,13 @@ const PortionBox = styled.div`
 
   strong {
     display: block;
-    font-size: 17px;
-    margin-bottom: 24px;
+    font-size: 15px;
+    margin-bottom: 18px;
   }
 
   ul {
     padding-left: 18px;
-    margin: 1.5rem;
+    margin: 1.0rem;
     line-height: 3; 
   }
 
